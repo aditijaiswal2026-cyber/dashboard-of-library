@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>📚 My Library</h2>
+
+        <a href="#">Dashboard</a>
+        <a href="#">Books</a>
+        <a href="#">Students</a>
+        <a href="#">Issued Books</a>
+        <a href="#">Return Books</a>
+        <a href="#">Settings</a>
+    </div>
+
+    <div class="main">
+        <div class="header">
+            <h1>Library Dashboard</h1>
+            <button onclick="showMessage()">🔔</button>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Total Books</h3>
+                <p>1,250</p>
+            </div>
+
+            <div class="card">
+                <h3>Available Books</h3>
+                <p>850</p>
+            </div>
+
+            <div class="card">
+                <h3>Issued Books</h3>
+                <p>400</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Students</h3>
+                <p>320</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="table-box">
+                <h2>Recent Books</h2>
+
+                <table>
+                    <tr>
+                        <th>Book Name</th>
+                        <th>Author</th>
+                        <th>Status</th>
+                    </tr>
+
+                    <tr>
+                        <td>Harry Potter</td>
+                        <td>J.K. Rowling</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <tr>
+                        <td>Atomic Habits</td>
+                        <td>James Clear</td>
+                        <td>Issued</td>
+                    </tr>
+
+                    <tr>
+                        <td>Rich Dad Poor Dad</td>
+                        <td>Robert Kiyosaki</td>
+                        <td>Available</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="search-box">
+                <h2>Search Book</h2>
+
+                <input type="text" id="bookSearch"
+                       placeholder="Enter book name">
+
+                <button onclick="searchBook()">Search</button>
+
+                <p id="result"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>p
